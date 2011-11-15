@@ -26,32 +26,4 @@ enum GUIEvent {
     geWindowLower
 };
 
-#ifdef GUI_EVENT_NAMES
-struct {
-    GUIEvent type;
-    const char *name;
-} gui_events[] =
-{
-    { geStartup, "startup" },
-    { geShutdown, "shutdown" },
-    { geRestart, "restart" },
-    { geCloseAll, "closeAll" },
-    { geLaunchApp, "launchApp" },
-    { geWorkspaceChange, "workspaceChange" },
-    { geWindowOpened, "windowOpen" },
-    { geWindowClosed, "windowClose" },
-    { geDialogOpened, "dialogOpen" },
-    { geDialogClosed, "dialogClose" },
-    { geWindowMin, "windowMin" },
-    { geWindowMax, "windowMax" },
-    { geWindowRestore, "windowRestore" },
-    { geWindowHide, "windowHide" },
-    { geWindowRollup, "windowRollup" },
-    { geWindowLower, "windowLower" },
-    { geWindowSized, "windowSized" },
-    { geWindowMoved, "windowMoved" }
-};
-
-#endif
-
 #endif
